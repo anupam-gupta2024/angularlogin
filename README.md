@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
+## Import node_modules
+
+Because a .gitignore is generated when you generate a project, and it contains the line that excludes the node_modules repository from being pushed.
+
+This is done because the folder can be very heavy (several hundreds of Mb), and it would cause your pushes to be very long, and not up-to-date with your semver.
+
+If other users want to run your project locally, they will have to run `npm i` before `ng serve`. That's widely accepted as a standard.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
